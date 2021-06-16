@@ -12,6 +12,8 @@ class SwitchTenantDatabaseTask extends SwitchTenantDatabaseTaskBase
 
     public function makeCurrent(Tenant $tenant): void
     {
+        //dd('SwitchTenantDatabaseTask::makeCurrent');
+
         $this->setTenantConnectionDatabase($tenant);
     }
 
