@@ -74,7 +74,7 @@ return [
     'actions' => [
         'make_tenant_current_action' => MakeTenantCurrentAction::class,
         'forget_current_tenant_action' => ForgetCurrentTenantAction::class,
-        'make_queue_tenant_aware_action' => MakeQueueTenantAwareAction::class,
+        'make_queue_tenant_aware_action' => \App\Multitenancy\Actions\MakeQueueTenantAwareAction::class,
         'migrate_tenant' => MigrateTenantAction::class,
     ],
 
